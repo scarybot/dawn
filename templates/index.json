@@ -41,11 +41,26 @@
         "add_image_padding": false,
         "show_vendor": true
       }
+    },
+    "16407938859d60b038": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular lubricants",
+        "collection": "lubricants",
+        "products_to_show": 4,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": true
+      }
     }
   },
   "order": [
     "featured_products",
     "1640793579f32e0411",
-    "16407938287d3d807c"
+    "16407938287d3d807c",
+    "16407938859d60b038"
   ]
 }
