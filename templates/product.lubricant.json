@@ -49,16 +49,11 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "<p>{{ product.metafields.global.type.value }}<\/p><p>{{ product.metafields.grease.nlgi.value }}<\/p><p>{{ product.metafields.global.base.value }}<\/p><p>{{ product.metafields.grease.thickener.value }}<\/p><p>{{ product.metafields.global.viscosity.value }}<\/p>",
+            "content": "<p><a href=\"\/pages\/vertrel-xf-plastics-compatibility\" title=\"Vertrel XF Material Compatibility\">test<\/a><\/p><p>{{ product.metafields.global.type.value }}<\/p><p><\/p><p>{{ product.metafields.grease.nlgi.value }}<\/p><p>{{ product.metafields.global.base.value }}<\/p><p>{{ product.metafields.grease.thickener.value }}<\/p><p>{{ product.metafields.global.viscosity.value }}<\/p>",
             "page": "",
             "icon": "box"
           }
@@ -73,7 +68,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0"
       ],
       "settings": {
