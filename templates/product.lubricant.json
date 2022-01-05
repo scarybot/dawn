@@ -44,18 +44,18 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "<p><table><tr><td>Type:</td><td>{{ product.metafields.global.type.value }}</td></tr><tr><td>Thickness:</td><td>NLGI {{ product.metafields.grease.nlgi.value }}</td></tr><tr><td>Base:</td><td>{{ product.metafields.global.base.value }}</td><tr><tr><td>Thickener:</td><td>{{ product.metafields.grease.thickener.value }}</td></tr><tr><td>Viscosity:</td><td>{{ product.metafields.global.viscosity.value }}</tr></td></table></p>",
+            "content": "<p><table><tr><td style=\"min-width: 125px;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
             "page": "",
             "icon": "box"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         }
       },
