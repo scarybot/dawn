@@ -53,7 +53,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "<p><a href=\"\/pages\/vertrel-xf-plastics-compatibility\" title=\"Vertrel XF Material Compatibility\">test<\/a><\/p><p>{{ product.metafields.global.type.value }}<\/p><p><\/p><p>{{ product.metafields.grease.nlgi.value }}<\/p><p>{{ product.metafields.global.base.value }}<\/p><p>{{ product.metafields.grease.thickener.value }}<\/p><p>{{ product.metafields.global.viscosity.value }}<\/p>",
+            "content": "<p><table><tr><td>Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><\/tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>{{ product.metafields.global.viscosity.value }}<\/tr><\/td><\/p>",
             "page": "",
             "icon": "box"
           }
