@@ -58,7 +58,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "",
+            "content": "<p>{{ product.metafields.global.type.value }}<\/p><p>{{ product.metafields.grease.nlgi.value }}<\/p><p>{{ product.metafields.global.base.value }}<\/p><p>{{ product.metafields.grease.thickener.value }}<\/p><p>{{ product.metafields.global.viscosity.value }}<\/p>",
             "page": "",
             "icon": "check_mark"
           }
