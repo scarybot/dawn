@@ -406,6 +406,27 @@
       </div>
     </modal-dialog>
   {%- endfor -%}
+
+  {%- if product.description != blank -%}
+    <div class="product__description-parent">
+      <h2>Description</h2>	
+      <div class="product__description product__description--custom rte">
+      {{ product.description }}
+      </div>
+    </div>
+    <style>
+      @media (max-width: 749px){
+        .product__description-parent{
+        display: none;
+        }
+      }
+      @media (min-width: 750px){
+        .product__description:not([class*='--custom']){
+        display: none;
+        }
+      }
+    </style>
+  {%- endif -%}
 </section>
 
 {% javascript %}
