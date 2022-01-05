@@ -174,7 +174,7 @@
                 </div>
               </details>
             </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            <script src="{{ 'share1' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -297,6 +297,9 @@
             </pickup-availability>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+          {%- when 'lubeinfo' -%}
+              lolol
+  
           {%- endcase -%}
         {%- endfor -%}
       </div>

@@ -34,9 +34,6 @@
         },
         "description": {
           "type": "description"
-        },
-        "share": {
-          "type": "share"
         }
       },
       "block_order": [

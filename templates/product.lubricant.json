@@ -47,11 +47,6 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
-        }
       },
       "block_order": [
         "vendor",
@@ -61,8 +56,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "lubeinfo",
+        "description"
       ],
       "settings": {
       }
