@@ -67,7 +67,7 @@
         "c1fc274a-838e-4a9b-981a-139bf22f0afe": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Which lube?",
+            "heading": "Which lube and films?",
             "content": "{% assign housingLubeProduct = all_products[product.metafields.my_fields.recommended_lube_housing] %}\n\n{% assign springLubeProduct = all_products[product.metafields.my_fields.recommended_lube_spring] %}\n\nWe recommend <a href=\"{{ housingLubeProduct.url }}\" target=\"_blank\">{{ housingLubeProduct.title }}<\/a> for the stem and housing, and <a href=\"{{ springLubeProduct.url }}\" target=\"_blank\">{{ springLubeProduct.title }}<\/a> for the spring.\n\n{%- case product.metafields.my_fields.switch_filming %}\n{%- when \"Recommended\" -%}\n&nbsp; We recommend the use of <a href=\"\/collections\/switch-films\" target=\"_blank\">switch films<\/a> on this product.\n{%- when \"Optional\" -%}\n&nbsp; The tolerances on this switch are generally good, so the use of <a href=\"\/collections\/switch-films\" target=\"_blank\">switch films<\/a> may not be necessary, depending on your preference.\n{%- when \"Not necessary\" -%}\n&nbsp; The tolerances on this switch are generally very good, so the use of <a href=\"\/collections\/switch-films\" target=\"_blank\">switch films<\/a> is not normally necessary for this product.\n\n{%- when \"Highly recommended\" -%}\n&nbsp; It is not uncommon for this switch to suffer from high variation in fitment between the top and bottom housing. Using <a href=\"\/collections\/switch-films\" target=\"_blank\">switch films<\/a> is highly recommended for this product.\n{%- endcase -%}",
             "page": "",
             "icon": "question_mark"
