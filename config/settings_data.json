@@ -6,18 +6,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
+          "ed378896-224a-4436-997f-d3afc2f85b0f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Welcome to our store",
+              "text": "loob.no is now part of keyb.no!",
               "color_scheme": "accent-1",
               "link": ""
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "ed378896-224a-4436-997f-d3afc2f85b0f"
         ],
         "settings": {
         }
