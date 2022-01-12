@@ -68,7 +68,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Which lube?",
-            "content": "{% assign housingLubeProduct = all_products[product.metafields.product.my_fields.recommended_lube_housing] %}\n\nWe recommend {{ housingLubeProduct.title }}",
+            "content": "{% assign housingLubeProduct = all_products[product.metafields.my_fields.recommended_lube_housing] %}\n\nWe recommend <a href=\"{{ housingLubeProduct.url }}\" target=\"_blank\">{{ housingLubeProduct.title }}<\/a>",
             "page": "",
             "icon": "question_mark"
           }
