@@ -30,6 +30,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -40,6 +41,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -50,6 +52,15 @@
         "share": {
           "type": "share",
           "settings": {
+          }
+        },
+        "b0bdc04f-f2be-48fe-899b-0b49018a58ee": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Technical info",
+            "content": "<p><table><tr><td style=\"width: *;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
+            "page": "",
+            "icon": "check_mark"
           }
         }
       },
@@ -62,14 +73,22 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "b0bdc04f-f2be-48fe-899b-0b49018a58ee"
       ],
       "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
       }
     }
   },
