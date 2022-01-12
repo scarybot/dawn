@@ -63,6 +63,15 @@
             "page": "",
             "icon": "ruler"
           }
+        },
+        "c1fc274a-838e-4a9b-981a-139bf22f0afe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Which lube?",
+            "content": "{% assign housingLubeProduct = all_products[product.metafields.product.my_fields.recommended_lube_housing] %}\n\nWe recommend {{ housingLubeProduct.title }}",
+            "page": "",
+            "icon": "question_mark"
+          }
         }
       },
       "block_order": [
@@ -75,7 +84,8 @@
         "buy_buttons",
         "description",
         "share",
-        "b0bdc04f-f2be-48fe-899b-0b49018a58ee"
+        "b0bdc04f-f2be-48fe-899b-0b49018a58ee",
+        "c1fc274a-838e-4a9b-981a-139bf22f0afe"
       ],
       "settings": {
         "enable_sticky_info": true,
