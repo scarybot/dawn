@@ -68,7 +68,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Which lube?",
-            "content": "{% assign housingLubeProduct = all_products[product.metafields.my_fields.recommended_lube_housing] %}\n\nWe recommend <a href=\"{{ housingLubeProduct.url }}\" target=\"_blank\">{{ housingLubeProduct.title }}<\/a>",
+            "content": "{% assign housingLubeProduct = all_products[product.metafields.my_fields.recommended_lube_housing] %}\n\n{% assign springLubeProduct = all_products[product.metafields.my_fields.recommended_lube_spring] %}\n\nWe recommend <a href=\"{{ housingLubeProduct.url }}\" target=\"_blank\">{{ housingLubeProduct.title }}<\/a> for the stem and housing, and <a href=\"{{ springLubeProduct.url }}\" target=\"_blank\">{{ springLubeProduct.title }}<\/a> for the spring.",
             "page": "",
             "icon": "question_mark"
           }
