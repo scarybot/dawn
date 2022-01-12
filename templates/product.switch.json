@@ -58,7 +58,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "<p><table><tr><td style=\"width: *;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
+            "content": "<p><table style=\"width: 100%;\"><tr><td >Operating Principle:<\/td><td>{{ product.metafields.my_fields.operating_principle.value }}<\/td><\/tr><tr><td>Action:<\/td><td>{{ product.metafields.global.action.value }}<\/td><\/tr>{%- if product.metafields.global.actuation.value -%}<tr><td>Actuation Force:<\/td><td>{{ product.metafields.global.actuation.value }} cN<\/td><\/tr>{%- endif -%}{%- if product.metafields.global.bottomout.value -%}<tr><td>Bottom-out Force:<\/td><td>{{ product.metafields.global.bottomout.value }} cN<\/td><\/tr>{%- endif %}<tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
             "page": "",
             "icon": "check_mark"
           }
