@@ -4,9 +4,46 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "164201147954c36fb9": {
+      "type": "collection-list",
+      "blocks": {
+        "16420114797d203add-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "soft-grease"
+          }
+        },
+        "16420114797d203add-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lube-for-key-stabilizer-wires"
+          }
+        },
+        "16420114797d203add-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "oils"
+          }
+        }
+      },
+      "block_order": [
+        "16420114797d203add-1",
+        "16420114797d203add-0",
+        "16420114797d203add-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164201147954c36fb9"
   ]
 }

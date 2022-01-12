@@ -1,21 +1,22 @@
 {
   "current": {
+    "social_instagram_link": "https:\/\/instagram.com\/keyb.no",
+    "checkout_logo_image": "shopify:\/\/shop_images\/keyb_logo_tot.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
+          "ed378896-224a-4436-997f-d3afc2f85b0f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Welcome to our store",
+              "text": "loob.no has now become keyb.no!",
               "color_scheme": "accent-1",
               "link": ""
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "ed378896-224a-4436-997f-d3afc2f85b0f"
         ],
         "settings": {
         }
@@ -23,7 +24,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/keyb_logo_tot.png",
+          "logo_width": 130,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
