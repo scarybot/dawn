@@ -48,7 +48,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Technical info",
-            "content": "<style>\n.tech_table {\n  padding: 2px;\n}\n\n.tech_table tr:nth-child(even) {\n  background-color: #f8f8f8;\n}\n<\/style>\n<p><table class=\"tech_table\"><tr><td style=\"min-width: 125px;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
+            "content": "<style>\n.tech_table {\n  padding: 2px;\n}\n\n.tech_table tr:nth-child(even) {\n  background-color: #f8f8f8;\n}\n<\/style>\n<p><table class=\"tech_table\"><tr><td style=\"min-width: 125px;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><\/tr><tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr><tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
             "page": "",
             "icon": "box"
           }
