@@ -57,6 +57,15 @@
           "type": "description",
           "settings": {
           }
+        },
+        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Safety data sheets",
+            "content": "",
+            "page": "",
+            "icon": "heart"
+          }
         }
       },
       "block_order": [
@@ -68,7 +77,8 @@
         "quantity_selector",
         "buy_buttons",
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0",
-        "description"
+        "description",
+        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3"
       ],
       "settings": {
         "enable_sticky_info": true,
