@@ -62,7 +62,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Safety data sheets",
-            "content": "{%- if product.metafields.my_fields.msds_en %}<a href=\"{{ product.metafields.my_fields.msds_en }}\" target=\"_blank\">🇬🇧 English<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_no %}<a href=\"{{ product.metafields.my_fields.msds_no }}\" target=\"_blank\">🇬🇧 Norwegian<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_se %}<a href=\"{{ product.metafields.my_fields.msds_se }}\" target=\"_blank\">🇬🇧 Swedish<\/a>{%- endif -%}",
+            "content": "{%- if product.metafields.my_fields.msds_en %}<a href=\"{{ product.metafields.my_fields.msds_en }}\" target=\"_blank\">🇬🇧 English<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_no %}<a href=\"{{ product.metafields.my_fields.msds_no }}\" target=\"_blank\">🇳🇴 Norwegian<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_se %}<a href=\"{{ product.metafields.my_fields.msds_se }}\" target=\"_blank\">🇬🇧 Swedish<\/a>{%- endif -%}",
             "page": "",
             "icon": "heart"
           }
