@@ -5,34 +5,38 @@
       "settings": {
       }
     },
-    "164219897147a47e26": {
-      "type": "collage",
+    "16421990341f2a5e41": {
+      "type": "multicolumn",
       "blocks": {
-        "164219897179a14c1f-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        },
-        "d9102ef6-d563-464f-8d22-45af8fe10146": {
-          "type": "image",
+        "1642199034103f9c27-0": {
+          "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/loob-sitebg.png",
-            "image_padding": true,
-            "color_scheme": "accent-1"
+            "title": "",
+            "text": ""
+          }
+        },
+        "1642199034103f9c27-1": {
+          "type": "column",
+          "settings": {
+            "title": "Loob is now part of Keyb",
+            "text": "<p>After starting out in 2019 selling a handful of switch lubes to the Norwegian custom keyboard community, Loob gradually began to grow beyond its roots, and now serves thousands of keyboard builders every year, in every part of the world. So, it was time for a new name to reflect our new ambition. Welcome to Keyb!<\/p>"
           }
         }
       },
       "block_order": [
-        "164219897179a14c1f-2",
-        "d9102ef6-d563-464f-8d22-45af8fe10146"
+        "1642199034103f9c27-0",
+        "1642199034103f9c27-1"
       ],
       "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "164201147954c36fb9": {
@@ -70,46 +74,11 @@
         "image_padding": false,
         "show_view_all": false
       }
-    },
-    "16421990341f2a5e41": {
-      "type": "multicolumn",
-      "blocks": {
-        "1642199034103f9c27-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/loob-sitebg.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1642199034103f9c27-1": {
-          "type": "column",
-          "settings": {
-            "title": "Loob is now part of Keyb",
-            "text": "<p>After starting out in 2019 selling a handful of switch lubes to the Norwegian custom keyboard community, Loob gradually began to grow beyond its roots, and now serves thousands of keyboard builders every year, in every part of the world. So, it was time for a new name to reflect our new ambition. Welcome to Keyb!<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1642199034103f9c27-0",
-        "1642199034103f9c27-1"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "third",
-        "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
     }
   },
   "order": [
     "main",
-    "164219897147a47e26",
-    "164201147954c36fb9",
-    "16421990341f2a5e41"
+    "16421990341f2a5e41",
+    "164201147954c36fb9"
   ]
 }
