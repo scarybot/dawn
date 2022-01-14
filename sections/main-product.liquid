@@ -475,6 +475,9 @@
                     background: #f1f7ff;
                   }
 
+                  .highcharts-plot-band-label {
+                    font-size: clamp(7px, 1.4vw, 10px) !important;
+                  }
                 </style>
                   <script src="https://code.highcharts.com/highcharts.js"></script>
                   <script src="https://code.highcharts.com/modules/bullet.js"></script>
@@ -508,7 +511,6 @@
                         borderWidth: 0,
                         color: '#555',
                         maxPointWidth: 20,
-                        shadow: true,
                         targetOptions: {
                           width: '200%',
                           color: '#f00'
@@ -538,19 +540,23 @@
                       plotBands: [{
                         from: 0,
                         to: 25,
-                        color: '#B9E5E3'
+                        color: '#B9E5E3',
+                        label: {text: 'Clicky', verticalAlign: 'bottom'},
                       },{
                         from: 25,
                         to: 70,
-                        color: '#A3CDCB'
+                        color: '#A3CDCB',
+                        label: {text: 'Tactile', verticalAlign: 'bottom'}
                       }, {
                         from: 70,
                         to: 250,
-                        color: '#8CB4B2'
+                        color: '#8CB4B2',
+                        label: {text: 'Linear', verticalAlign: 'bottom'}
                       }, {
                         from: 250,
                         to: 15000,
-                        color: '#769C9A'
+                        color: '#769C9A',
+                        label: {text: 'Stabs', verticalAlign: 'bottom'}
                       }],
                       title: null
                     },
@@ -600,11 +606,13 @@
                       plotBands: [{
                         from: 0,
                         to: 2.5,
-                        color: '#B9E5E3'
+                        color: '#B9E5E3',
+                        label: {text: 'Switches', verticalAlign: 'bottom'}
                       }, {
                         from: 2.5,
                         to: 4,
-                        color: '#769C9A'
+                        color: '#769C9A',
+                        label: {text: 'Stabs', verticalAlign: 'bottom'}
                       }],
                       labels: {
                         formatter: doFormat
