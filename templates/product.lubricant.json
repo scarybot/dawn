@@ -71,7 +71,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Material properties",
-            "content": "<script>\nvar productNLGI = \"{{ product.metafields.grease.nlgi }}\";\nvar productViscosity = \"{{ product.metafields.global.viscosity }}\";\n\nconsole.log(\"viscosity is\" + productViscosity)\n<\/script>",
+            "content": "<script>\nvar productNLGI = \"{{ product.metafields.grease.nlgi }}\";\nvar productViscosity = \"{{ product.metafields.global.viscosity }}\";\n<\/script>",
             "page": "lubricant-graphs",
             "icon": "check_mark"
           }
