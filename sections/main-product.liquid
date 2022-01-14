@@ -558,19 +558,19 @@
                       }]
                     }],
                     tooltip: {
-                      pointFormat: '<b>{doFormat(point.y)}</b>'
+                      pointFormat: '<b>{point.y}</b>'
                     }
                   });
                   
                   function doFormat(thing) {
-                  switch(thing.value) {
-                  case 0:
-                  return "000"
-                  case 1:
-                  return "00"
-                  default:
-                  return thing.value - 2
-                  }
+                    switch(thing.value) {
+                    case 0:
+                      return "000"
+                    case 1:
+                      return "00"
+                    default:
+                      return thing.value - 2
+                    }
                   }
                   
                   Highcharts.chart('container2', {
@@ -601,7 +601,7 @@
                       }]
                     }],
                     tooltip: {
-                      pointFormat: '<b>{point.y}</b> (with target at {point.target})'
+                      pointFormat: '<b>{doFormat(point.y)}'
                     }
                   });
                 </script>                  
