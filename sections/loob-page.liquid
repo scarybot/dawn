@@ -3,8 +3,12 @@
     
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-
-<div class="page-width page-width--narrow">
+<style>
+    .loob-container {
+        background: black
+    }
+</style>
+<div class="page-width page-width--narrow loob-container">
   <h1 class="main-page-title page-title h0">
     This is a loob page
     {{ page.title | escape }}
@@ -16,7 +20,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.main-page.name",
+  "name": "t:sections.loob-page.name",
   "tag": "section",
   "class": "spaced-section"
 }
