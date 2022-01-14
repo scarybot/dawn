@@ -574,14 +574,13 @@
                   }
                   
                   function doFormatPoint(thing) {
-                    console.log(thing.y);
-                    switch(thing.y) {
-                    case 0:
+                    switch("{{ block.settings.nlgi }}") {
+                    case "0":
                       return "000"
-                    case 1:
+                    case "1":
                       return "00"
                     default:
-                      return thing.y - 2
+                      return {{ block.settings.nlgi }} - 2
                     }
                   }
 
