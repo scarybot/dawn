@@ -71,7 +71,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Material properties",
-            "content": "",
+            "content": "<script>console.log('wahooooooo!');<\/script>",
             "page": "lubricant-graphs",
             "icon": "check_mark"
           }
