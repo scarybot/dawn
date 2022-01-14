@@ -71,8 +71,8 @@
           "type": "lube_graph_tab",
           "settings": {
             "heading": "Material Properties",
-            "viscosity": "",
-            "nlgi": "",
+            "viscosity": "{{ product.metafields.global.viscosity }}",
+            "nlgi": "2",
             "icon": "check_mark"
           }
         }
