@@ -58,6 +58,15 @@
           "settings": {
           }
         },
+        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83": {
+          "type": "lube_graph_tab",
+          "settings": {
+            "heading": "Lubricant properties",
+            "viscosity": "{{ product.metafields.global.viscosity }}",
+            "nlgi": "{%- if product.metafields.grease.nlgi -%}{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}{%- else -%}null{%- endif -%}",
+            "icon": "question_mark"
+          }
+        },
         "2245a2b8-3ed5-4cb7-8fc2-817a090875a3": {
           "type": "collapsible_tab",
           "settings": {
@@ -65,15 +74,6 @@
             "content": "{%- if product.metafields.my_fields.msds_en %}<a href=\"{{ product.metafields.my_fields.msds_en.value.url }}\" target=\"_blank\">🇬🇧 English<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_no %}<a href=\"{{ product.metafields.my_fields.msds_no.value.url }}\" target=\"_blank\">🇳🇴 Norwegian<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_se %}<a href=\"{{ product.metafields.my_fields.msds_se.value.url }}\" target=\"_blank\">🇸🇪 Swedish<\/a>{%- endif -%}",
             "page": "",
             "icon": "heart"
-          }
-        },
-        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83": {
-          "type": "lube_graph_tab",
-          "settings": {
-            "heading": "Lubricant properties",
-            "viscosity": "{{ product.metafields.global.viscosity }}",
-            "nlgi": "{%- if product.metafields.grease.nlgi -%}{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}{%- else -%}null{%- endif -%}",
-            "icon": "check_mark"
           }
         }
       },
@@ -87,8 +87,8 @@
         "buy_buttons",
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0",
         "description",
-        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3",
-        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83"
+        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83",
+        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3"
       ],
       "settings": {
         "enable_sticky_info": true,
