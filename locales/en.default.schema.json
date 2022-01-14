@@ -1029,6 +1029,9 @@
     "main-page": {
       "name": "Page"
     },
+    "loob-page": {
+      "name": "Loob Page"
+    },
     "main-password-footer": {
       "name": "Password footer",
       "settings": {
