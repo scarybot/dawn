@@ -72,7 +72,7 @@
           "settings": {
             "heading": "Lubricant properties",
             "viscosity": "{{ product.metafields.global.viscosity }}",
-            "nlgi": "{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}",
+            "nlgi": "{%- if product.metafields.grease.nlgi -%}{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}{%- else -%}null{%- endif -%}",
             "icon": "check_mark"
           }
         }
