@@ -3,15 +3,8 @@
     
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<style>
-    #MainContent {
-        background: #445958;
-        color: white;
-    }
-</style>
 <div class="page-width page-width--narrow">
   <h1 class="main-page-title page-title h0">
-    This is a loob page
     {{ page.title | escape }}
   </h1>
   <div class="rte">
