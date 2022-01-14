@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "a108cb60-2a39-47aa-88df-5e05fb5d27f0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Technical info",
+            "content": "<style>\n.tech_table {\n  padding: 2px;\n  width: 100%;\n}\n\n.tech_table tr:nth-child(even) {\n  background-color: #f8f8f8;\n}\n<\/style>\n<p><table class=\"tech_table\"><tr><td style=\"min-width: 125px;\">Type:<\/td><td>{{ product.metafields.global.type.value }}<\/td><\/tr><tr><td>Thickness:<\/td><td>NLGI {{ product.metafields.grease.nlgi.value }}<\/td><\/tr><tr><td>Base:<\/td><td>{{ product.metafields.global.base.value }}<\/td><\/tr>{%- if product.metafields.grease.thickener -%}<tr><td>Thickener:<\/td><td>{{ product.metafields.grease.thickener.value }}<\/td><\/tr>{%- endif -%}<tr><td>Viscosity:<\/td><td>~{{ product.metafields.global.viscosity.value }} cSt (40&deg;)<\/tr><\/td><\/table><\/p>",
+            "page": "",
+            "icon": "box"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Safety data sheets",
+            "content": "{%- if product.metafields.my_fields.msds_en %}<a href=\"{{ product.metafields.my_fields.msds_en.value.url }}\" target=\"_blank\">🇬🇧 English<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_no %}<a href=\"{{ product.metafields.my_fields.msds_no.value.url }}\" target=\"_blank\">🇳🇴 Norwegian<\/a><br>{%- endif -%}\n{%- if product.metafields.my_fields.msds_se %}<a href=\"{{ product.metafields.my_fields.msds_se.value.url }}\" target=\"_blank\">🇸🇪 Swedish<\/a>{%- endif -%}",
+            "page": "",
+            "icon": "heart"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "subtitle",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "a108cb60-2a39-47aa-88df-5e05fb5d27f0",
+        "description",
+        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83",
+        "2245a2b8-3ed5-4cb7-8fc2-817a090875a3"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
