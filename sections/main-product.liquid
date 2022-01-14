@@ -510,7 +510,6 @@
                     },
                     yAxis: {
                       gridLineWidth: 0,
-                      y: 200
                     },
                     plotOptions: {
                       series: {
@@ -545,6 +544,7 @@
                       min: 10,
                       max: 6500,
                       maxTicks: 6500,
+                      offset: 100
                       type: 'logarithmic',
                       plotBands: [{
                         from: 0,
@@ -570,8 +570,7 @@
                         color: '#769C9A',
                         label: {
                           text: 'Stabs', verticalAlign: 'bottom', y: 20
-                        },
-                        thickness: 20
+                        }
                       }],
                       title: null
                     },
