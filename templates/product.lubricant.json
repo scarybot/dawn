@@ -72,7 +72,7 @@
           "settings": {
             "heading": "Material Properties",
             "viscosity": "{{ product.metafields.global.viscosity }}",
-            "nlgi": "2",
+            "nlgi": "{%- case product.metafields.grease.nlgi -%}{%- when \"000\" -%}-2{%- when \"00\" -%}-1{%- else -%}{{ product.metafields.grease.nlgi }}{%- endcase -%}",
             "icon": "check_mark"
           }
         }
