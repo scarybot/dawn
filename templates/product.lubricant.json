@@ -70,7 +70,7 @@
         "7ade3b27-6bd3-4da7-a647-d70c2c083ed0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
+            "heading": "Material properties",
             "content": "",
             "page": "lubricant-graphs",
             "icon": "check_mark"
