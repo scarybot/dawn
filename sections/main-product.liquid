@@ -574,6 +574,7 @@
                   }
                   
                   function doFormatPoint(thing) {
+                    console.log(thing);
                     switch(thing.y) {
                     case 0:
                       return "000"
@@ -583,7 +584,7 @@
                       return thing.y - 2
                     }
                   }
-                  
+
                   Highcharts.chart('container2', {
                     xAxis: {
                       categories: ['<span class="hc-cat-title">Thickness</span><br>NLGI'],
