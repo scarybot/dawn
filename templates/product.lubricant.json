@@ -67,12 +67,12 @@
             "icon": "heart"
           }
         },
-        "7ade3b27-6bd3-4da7-a647-d70c2c083ed0": {
-          "type": "collapsible_tab",
+        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83": {
+          "type": "lube_graph_tab",
           "settings": {
-            "heading": "Material properties",
-            "content": "<script>\nvar productNLGI = \"{{ product.metafields.grease.nlgi }}\";\nvar productViscosity = \"{{ product.metafields.global.viscosity }}\";\n<\/script>",
-            "page": "lubricant-graphs",
+            "heading": "Material Properties",
+            "viscosity": "",
+            "nlgi": "",
             "icon": "check_mark"
           }
         }
@@ -88,7 +88,7 @@
         "a108cb60-2a39-47aa-88df-5e05fb5d27f0",
         "description",
         "2245a2b8-3ed5-4cb7-8fc2-817a090875a3",
-        "7ade3b27-6bd3-4da7-a647-d70c2c083ed0"
+        "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83"
       ],
       "settings": {
         "enable_sticky_info": true,
