@@ -70,7 +70,7 @@
         "9b23e7c1-ffab-4d3a-803d-b95f2a9b6e83": {
           "type": "lube_graph_tab",
           "settings": {
-            "heading": "Material Properties",
+            "heading": "Lubricant properties",
             "viscosity": "{{ product.metafields.global.viscosity }}",
             "nlgi": "{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}",
             "icon": "check_mark"
