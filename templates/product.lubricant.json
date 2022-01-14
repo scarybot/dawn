@@ -64,7 +64,7 @@
             "heading": "Lubricant properties",
             "viscosity": "{{ product.metafields.global.viscosity }}",
             "nlgi": "{%- if product.metafields.grease.nlgi -%}{%- case product.metafields.grease.nlgi.value -%}{%- when \"000\" -%}0{%- when \"00\" -%}1{%- else -%}{{ product.metafields.grease.nlgi.value | plus: 2 }}{%- endcase -%}{%- else -%}null{%- endif -%}",
-            "icon": "question_mark"
+            "icon": "ruler"
           }
         },
         "2245a2b8-3ed5-4cb7-8fc2-817a090875a3": {
