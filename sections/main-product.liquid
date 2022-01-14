@@ -558,7 +558,7 @@
                       }]
                     }],
                     tooltip: {
-                      pointFormat: '<b>{point.y}</b> (with target at {point.target})'
+                      pointFormat: '<b>{doFormat(point.y)}</b>'
                     }
                   });
                   
@@ -930,7 +930,7 @@
         {
           "type": "liquid",
           "id": "viscosity",
-          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.liquid.label"
+          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.viscosity.label"
         },
         {
           "type": "liquid",
