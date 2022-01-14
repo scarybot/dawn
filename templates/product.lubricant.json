@@ -71,7 +71,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible tab",
-            "content": "",
+            "content": "<script>\nconsole.log('woooooot!');\n<\/script>",
             "page": "",
             "icon": "check_mark"
           }
