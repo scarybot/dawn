@@ -413,7 +413,202 @@
             </div>
           </details>
         </div>
-      {%- endcase -%}
+        {%- when 'lube_graph_tab' -%}
+          <div class="product__accordion accordion">
+            <details>
+              <summary>
+                <div class="summary__title">
+                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  <h2 class="h4 accordion__title">
+                    {{ block.settings.heading | default: block.settings.page.title }}
+                  </h2>
+                </div>
+                {% render 'icon-caret' %}
+              </summary>
+              <div class="accordion__content rte">
+                <style>
+                  #container1 {
+                    height: 115px;
+                  }
+                  
+                  #container2,
+                  #container3 {
+                    height: 85px;
+                  }
+                  
+                  .hc-cat-title {
+                    font-size: 13px;
+                    font-weight: bold;
+                  }
+                  
+                  .highcharts-figure,
+                  .highcharts-data-table table {
+                  }
+                  
+                  .highcharts-data-table table {
+                    font-family: Verdana, sans-serif;
+                    border-collapse: collapse;
+                    border: 1px solid #ebebeb;
+                    text-align: center;
+                    width: 100%;
+                  }
+                  
+                  .highcharts-data-table caption {
+                    padding: 0.5em 0;
+                    font-size: 1.2em;
+                    color: #555;
+                  }
+                  
+                  .highcharts-data-table th {
+                    font-weight: 600;
+                    padding: 0.5em;
+                  }
+                  
+                  .highcharts-data-table td,
+                  .highcharts-data-table th,
+                  .highcharts-data-table caption {
+                    padding: 0.5em;
+                  }
+                  
+                  .highcharts-data-table thead tr,
+                  .highcharts-data-table tr:nth-child(even) {
+                    background: #f8f8f8;
+                  }
+                  
+                  .highcharts-data-table tr:hover {
+                    background: #f1f7ff;
+                  }</style>
+                  <script src="https://code.highcharts.com/highcharts.js"></script>
+                  <script src="https://code.highcharts.com/modules/bullet.js"></script>
+                  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                  <figure class="highcharts-figure">
+                  <div id="container1"></div>
+                  <div id="container2"></div>
+                  <div id="container3"></div>
+                  </figure>
+                  <script>
+                  
+                  Highcharts.setOptions({
+                    chart: {
+                      inverted: true,
+                      marginLeft: 135,
+                      type: 'bullet'
+                    },
+                    title: {
+                      text: null
+                    },
+                    legend: {
+                      enabled: false
+                    },
+                    yAxis: {
+                      gridLineWidth: 0
+                    },
+                    plotOptions: {
+                      series: {
+                        pointPadding: 0.25,
+                        borderWidth: 0,
+                        color: '#000',
+                        targetOptions: {
+                          width: '200%'
+                        }
+                      }
+                    },
+                    credits: {
+                      enabled: false
+                    },
+                    exporting: {
+                      enabled: false
+                    }
+                  });
+                  
+                  Highcharts.chart('container1', {
+                    chart: {
+                      marginTop: 40
+                    },
+                    title: {
+                      text: null
+                    },
+                    xAxis: {
+                      categories: ['<span class="hc-cat-title">Viscosity</span><br>(cSt 40°)']
+                    },
+                    yAxis: {
+                      min: 10,
+                      max: 5000,
+                      type: 'logarithmic',
+                      plotBands: [{
+                        from: 0,
+                        to: 70,
+                        color: '#666'
+                      }, {
+                        from: 70,
+                        to: 200,
+                        color: '#999'
+                      }, {
+                        from: 200,
+                        to: 6000,
+                        color: '#bbb'
+                      }],
+                      title: null
+                    },
+                    series: [{
+                      data: [{
+                        target: {{ block.settings.viscosity }}, y: {{ block.settings.viscosity }}
+                      }]
+                    }],
+                    tooltip: {
+                      pointFormat: '<b>{point.y}</b> (with target at {point.target})'
+                    }
+                  });
+                  
+                  function doFormat(thing) {
+                  switch(thing.value) {
+                  case 0:
+                  return "000"
+                  case 1:
+                  return "00"
+                  default:
+                  return thing.value - 2
+                  }
+                  }
+                  
+                  Highcharts.chart('container2', {
+                    xAxis: {
+                      categories: ['<span class="hc-cat-title">Thickness</span><br>NLGI'],
+                    },
+                    yAxis: {
+                      tickInterval: 1,
+                      max: 4,
+                      min: 0,
+                      plotBands: [{
+                        from: 0,
+                        to: 2.5,
+                        color: '#666'
+                      }, {
+                        from: 2.5,
+                        to: 4,
+                        color: '#999'
+                      }],
+                      labels: {
+                        formatter: doFormat
+                      },
+                      title: null
+                    },
+                    series: [{
+                      data: [{
+                        target: {{ block.settings.nlgi }}, y: {{ block.settings.nlgi }}
+                      }]
+                    }],
+                    tooltip: {
+                      pointFormat: '<b>{point.y}</b> (with target at {point.target})'
+                    }
+                  });
+                </script>                  
+              </div>
+            </details>
+          </div>
+        {%- endcase -%}
     {%- endfor -%}
 
 
@@ -718,6 +913,133 @@
           ],
           "default": "check_mark",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        }
+      ]
+    },
+    {
+      "type": "lube_graph_tab",
+      "name": "t:sections.main-product.blocks.lube_graph_tab.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible tab",
+          "info": "t:sections.main-product.blocks.lube_graph_tab.settings.heading.info",
+          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.heading.label"
+        },
+        {
+          "type": "liquid",
+          "id": "viscosity",
+          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.content.label"
+        },
+        {
+          "type": "liquid",
+          "id": "nlgi",
+          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.page.label"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__1.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__2.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__3.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__4.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__5.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__6.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__7.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__8.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__9.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__10.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__11.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__12.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__13.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__14.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__15.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__16.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__17.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__18.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__19.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__20.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__21.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__22.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__23.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.options__24.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.lube_graph_tab.settings.icon.label"
         }
       ]
     },
