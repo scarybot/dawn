@@ -71,7 +71,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible tab",
-            "content": "<script>\nconsole.log('woooooot!');\n<\/script>",
+            "content": "",
             "page": "lubricant-graphs",
             "icon": "check_mark"
           }
