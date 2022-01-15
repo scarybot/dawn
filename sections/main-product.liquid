@@ -89,9 +89,11 @@
               {{ form | payment_terms }}
             {%- endform -%}
           {%- when 'availability' -%}
+            {%- if product.metafields.my_fields.expected.value != blank -%}
             <div class="no-js-hidden" id="price-{{ section.id }}">
               Expected in stock <b>{{ product.metafields.my_fields.expected.value | date: '%B  %d' }}</b>
             </div>
+            {%- endif-%}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
