@@ -56,19 +56,33 @@
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
         --color-base-text: {{ settings.colors_text }};
+        --color-base-text-dark: {{ settings.colors_text_dark }};
         --color-base-text-rgb: {{ settings.colors_text | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-text-rgb-dark: {{ settings.colors_text_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
         --color-base-background-1: {{ settings.colors_background_1 }};
+        --color-base-background-1-dark: {{ settings.colors_background_1_dark }};
         --color-base-background-1-rgb: {{ settings.colors_background_1 | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-background-1-rgb-dark: {{ settings.colors_background_1_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
         --color-base-background-2: {{ settings.colors_background_2 }};
+        --color-base-background-2-dark: {{ settings.colors_background_2_dark }};
         --color-base-background-2-rgb: {{ settings.colors_background_2 | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-background-2-rgb-dark: {{ settings.colors_background_2_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-solid-button-labels-dark: {{ settings.colors_solid_button_labels_dark }};
         --color-base-solid-button-labels: {{ settings.colors_solid_button_labels }};
         --color-base-solid-button-labels-rgb: {{ settings.colors_solid_button_labels | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-solid-button-labels-rgb-dark: {{ settings.colors_solid_button_labels_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
         --color-base-outline-button-labels: {{ settings.colors_outline_button_labels }};
+        --color-base-outline-button-labels-dark: {{ settings.colors_outline_button_labels_dark }};
         --color-base-outline-button-labels-rgb: {{ settings.colors_outline_button_labels | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-outline-button-labels-rgb-dark: {{ settings.colors_outline_button_labels_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
         --color-base-accent-1: {{ settings.colors_accent_1 }};
+        --color-base-accent-1-dark: {{ settings.colors_accent_1_dark }};
         --color-base-accent-1-rgb: {{ settings.colors_accent_1 | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-accent-1-rgb-dark: {{ settings.colors_accent_1_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
         --color-base-accent-2: {{ settings.colors_accent_2 }};
+        --color-base-accent-2-dark: {{ settings.colors_accent_2_dark }};
         --color-base-accent-2-rgb: {{ settings.colors_accent_2 | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-base-accent-2-rgb-dark: {{ settings.colors_accent_2_dark | color_to_rgb | remove: 'rgb(' | remove: ')' }};
 
         --color-base-text-opacity-10-percent: {{ settings.colors_text | color_mix: settings.colors_background_1, 10 }};
         --color-base-text-opacity-20-percent: {{ settings.colors_text | color_mix: settings.colors_background_1, 20 }};
@@ -76,6 +90,13 @@
         --color-base-text-opacity-85-percent: {{ settings.colors_text | color_mix: settings.colors_background_1, 85 }};
         --color-base-accent-1-opacity-10-percent: {{ settings.colors_accent_1 | color_mix: settings.colors_background_1, 10 }};
         --color-base-accent-2-opacity-10-percent: {{ settings.colors_accent_2 | color_mix: settings.colors_background_1, 10 }};
+
+        --color-base-text-opacity-10-percent-dark: {{ settings.colors_text_dark | color_mix: settings.colors_background_1_dark, 10 }};
+        --color-base-text-opacity-20-percent-dark: {{ settings.colors_text_dark | color_mix: settings.colors_background_1_dark, 20 }};
+        --color-base-text-opacity-55-percent-dark: {{ settings.colors_text_dark | color_mix: settings.colors_background_1_dark, 55 }};
+        --color-base-text-opacity-85-percent-dark: {{ settings.colors_text_dark | color_mix: settings.colors_background_1_dark, 85 }};
+        --color-base-accent-1-opacity-10-percent-dark: {{ settings.colors_accent_1_dark | color_mix: settings.colors_background_1_dark, 10 }};
+        --color-base-accent-2-opacity-10-percent-dark: {{ settings.colors_accent_2_dark | color_mix: settings.colors_background_1_dark, 10 }};
       }
 
       *,
