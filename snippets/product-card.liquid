@@ -70,9 +70,15 @@
 
         <div class="card__badge">
           {%- if product_card_product.available == false -%}
-            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">
-              {{ 'products.product.sold_out' | t }}
-            </span>
+            {%- if product_card_product.metafields.my_fields.expected != blank -%}
+              <span class="badge price__badge-coming-soon color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="false">
+                Coming Soon
+              </span>
+            {%- else -%}
+              <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">
+                {{ 'products.product.sold_out' | t }}
+              </span>
+            {%- endif -%}
           {%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
             <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}" aria-hidden="true">
               {{ 'products.product.on_sale' | t }}
