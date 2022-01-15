@@ -88,6 +88,10 @@
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
             {%- endform -%}
+          {%- when 'availability' -%}
+            <div class="no-js-hidden" id="price-{{ section.id }}">
+              Expected in stock <b>{{ product.metafields.my_fields.expected.value | date: '%B  %d' }}</b>
+            </div>
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -751,6 +755,11 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
+      "limit": 1
+    },
+    {
+      "type": "availability",
+      "name": "Availability",
       "limit": 1
     },
     {
