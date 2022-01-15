@@ -27,6 +27,11 @@
           "settings": {
           }
         },
+        "d06c5ff8-416c-45a6-91f7-64741a08e3db": {
+          "type": "availability",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -73,6 +78,7 @@
         "title",
         "subtitle",
         "price",
+        "d06c5ff8-416c-45a6-91f7-64741a08e3db",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
