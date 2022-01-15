@@ -34,6 +34,26 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "d0f90e1d-d3b5-44df-bc53-3569d9b1379f": {
+            "type": "text",
+            "settings": {
+              "heading": "Corporate Information",
+              "subtext": "<p>Denness Software Systems t\/a Keeb<br\/>Postboks 10<br\/>3107 Sem<br\/>Norway<br\/><\/p>"
+            }
+          },
+          "fc53764b-d668-4385-b572-6ca14f7dfaff": {
+            "type": "text",
+            "settings": {
+              "heading": "Registration",
+              "subtext": "<p>Company number 824464642<br\/>Foretaksregisteret<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "d0f90e1d-d3b5-44df-bc53-3569d9b1379f",
+          "fc53764b-d668-4385-b572-6ca14f7dfaff"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
