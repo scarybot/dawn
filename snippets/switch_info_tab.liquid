@@ -1,0 +1,248 @@
+<style>
+  .tech_table {
+    padding: 2px;
+  }
+
+  .invisible_table {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .invisible_table td {
+    padding-left: 0px !important;
+  }
+
+  .invisible_table tr:nth-child(even) {
+    background: none !important;
+  }
+
+
+  .tech_table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 0.8em;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip .tooltiptext {
+  top: -3px;
+  left: 150%;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+</style>
+
+{% liquid
+  assign first_variant = product.variants | first
+  assign fv_stem_colour = first_variant.metafields.my_fields.stem_colour.value | default: product.metafields.global.stemcolour.value
+  assign fv_top_colour = first_variant.metafields.my_fields.top_housing_colour.value | default: product.metafields.my_fields.housing_top_colour.value
+  assign fv_bottom_colour = first_variant.metafields.my_fields.bottom_housing_colour.value | default: product.metafields.global.housingcolour.value
+  assign fv_actuation_force = first_variant.metafields.my_fields.actuation_force.value | default: product.metafields.global.actuation.value
+  assign fv_bottomout_force = first_variant.metafields.my_fields.bottom_out_force.value | default: product.metafields.global.bottomout.value
+  assign fv_top_material = first_variant.metafields.my_fields.top_housing_material.value | default: product.metafields.my_fields.housing_material_top_.value
+  assign fv_bottom_material = first_variant.metafields.my_fields.bottom_housing_material.value | default: product.metafields.my_fields.housing_material_bottom_.value
+  assign fv_stem_material = first_variant.metafields.my_fields.stem_material.value | default: product.metafields.my_fields.material_stem_.value
+  assign fv_spring_length = first_variant.metafields.my_fields.spring_length.value | default: product.metafields.my_fields.spring_length.value
+  assign fv_spring_material = first_variant.metafields.my_fields.spring_material.value | default: product.metafields.my_fields.spring_material.value
+  assign fv_spring_colour = first_variant.metafields.my_fields.spring_colour.value | default: product.metafields.my_fields.spring_colour.value
+  assign fv_actuation_travel= first_variant.metafields.my_fields.actuation_travel.value | default: product.metafields.my_fields.actuation_travel.value
+  assign fv_full_travel = first_variant.metafields.my_fields.full_travel.value | default: product.metafields.my_fields.full_travel.value
+  assign fv_smd_placement = first_variant.metafields.my_fields.smd_placement.value | default: product.metafields.my_fields.smd_placement.value
+  assign fv_smd_cutout = first_variant.metafields.my_fields.smd_cutout.value | default: product.metafields.my_fields.smd_cutout.value
+  assign fv_top_effect = first_variant.metafields.my_fields.top_housing_effect.value | default: product.metafields.my_fields.housing_top_effect.value
+  assign fv_bottom_effect = first_variant.metafields.my_fields.bottom_housing_effect.value | default: product.metafields.my_fields.housing_bottom_effect.value
+  assign fv_stem_effect = first_variant.metafields.my_fields.stem_effect.value | default: product.metafields.my_fields.stem_effect.value
+%}
+
+<p>
+<table class="tech_table" style="width: 100%;">
+  <tr>
+    <td>Operating Principle:</td>
+    <td>{{ product.metafields.my_fields.operating_principle.value }}</td>
+  </tr>
+  {%- if product.metafields.my_fields.housing_type.value -%}<tr>
+    <td>Housing Type:</td>
+    <td>{{ product.metafields.my_fields.housing_type.value }} (opens with <a
+        href="{%- case product.metafields.my_fields.housing_type.value -%} {%- when " MX"
+        -%}/collections/mx-switch-openers{%- when "Kailh" -%}/collections/kailh-switch-openers{%- endcase -%}"
+        target="_blank">these</a>)</td>
+  </tr>{%- endif %}
+
+  {%- if product.metafields.my_fields.stem_type.value -%}<tr>
+    <td>Stem Type:</td>
+    <td>{{ product.metafields.my_fields.stem_type.value }} (fits <a
+        href="{%- case product.metafields.my_fields.stem_type.value -%} {%- when " MX" -%}/collections/mx-keycaps{%-
+        when "Kailh" -%}/collections/kailh-keycaps{%- endcase -%}" target="_blank">these</a> keycaps)</td>
+  </tr>{%- endif %}
+
+  <tr>
+    <td>Action:</td>
+    <td>{{ product.metafields.global.action.value }}</td>
+  </tr>
+
+  {%- if product.metafields.global.is_silenced -%}<tr>
+    <td>Silenced:</td>
+    <td>{%- if product.metafields.global.is_silenced.value == true -%}Yes{%- else -%}No{%- endif -%}</td>
+  </tr>{%- endif %}
+
+  {%- if product.metafields.global.mount.value -%}<tr>
+    <td>Mounting:</td>
+    <td>{{ product.metafields.global.mount.value }} {%- case product.metafields.global.mount.value -%} {%- when "PCB"
+      -%} (5-pin){%- when "Plate" -%} (3-pin){%- endcase -%}</td>
+  </tr>{%- endif -%}
+
+  <tr><td>SMD LED Support:</td>
+  <td>
+    {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td>{%- case variant.metafields.my_fields.smd_cutout.value -%} {%- when true -%}Good{%- when false
+      -%}Poor{%- endcase -%}{%- if variant.metafields.my_fields.smd_placement.value -%}&nbsp;({{
+      variant.metafields.my_fields.smd_placement.value }}){%- endif -%}</td></tr>{%- endfor -%}</table></td>
+    {%- else -%}
+      {%- case fv_smd_cutout -%} {%- when true -%}Good{%- when false
+        -%}Poor{%- endcase -%}{%- if fv_smd_placement -%}&nbsp;({{
+        fv_smd_placement }}){%- endif -%}
+    {%- endif -%}
+  </td></tr>
+
+  {%- if fv_actuation_force -%}
+  <tr><td>Actuation Force:</td><td>
+    {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td>{{ variant.metafields.my_fields.actuation_force.value }} cN
+      {%- if variant.metafields.my_fields.actuation_travel.value -%}&nbsp;({{ variant.metafields.my_fields.actuation_travel.value }}mm){%- endif -%}
+      </td></tr>{%- endfor -%}</table>
+    {%- else -%}
+      {{ fv_actuation_force }} cN
+      {%- if fv_actuation_travel -%}&nbsp;({{ fv_actuation_travel }} mm){%- endif -%}
+    {%- endif -%}
+    </td></tr>
+  {%- endif -%}
+
+  {%- if fv_bottomout_force -%}
+  <tr><td>Bottom-out Force:</td><td>
+    {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td>{{ variant.metafields.my_fields.bottom_out_force.value }} cN
+      {%- if variant.metafields.my_fields.full_travel.value -%}&nbsp;({{ variant.metafields.my_fields.full_travel.value }}mm){%- endif -%}
+      </td></tr>{%- endfor -%}</table>
+    {%- else -%}
+      {{ fv_bottomout_force }} cN
+      {%- if fv_full_travel -%}&nbsp;({{ fv_full_travel }} mm){%- endif -%}
+      {%- endif -%}
+    </td></tr>
+  {%- endif -%}
+
+  {%- if fv_spring_length or fv_spring_material or fv_spring_colour -%}
+    <tr>
+      <td>Spring:</td>
+      <td>
+        {%- if fv_spring_colour -%}
+          <svg width="20" height="20"
+              style="vertical-align: middle;">
+              <rect width="20" height="20"
+                style="fill:{{ fv_spring_colour }};stroke-width:3;stroke:rgb(0,0,0);)" />
+            </svg>
+        {%- endif -%}
+        &nbsp;{%- if fv_spring_material -%}&nbsp;{{ fv_spring_material }}{%- if fv_spring_length -%}&nbsp;({{ fv_spring_length }}mm){%- endif -%}
+      {%- else -%}
+        {%- if fv_spring_length -%}{{ fv_spring_length }}mm{%- endif -%}
+      {%- endif -%}
+    </td></tr>
+  {%- endif -%}
+
+  {%- if fv_top_material -%}
+  <tr>
+    <td>Top:</td>
+    <td>
+      {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td><svg width="20" height="20"
+        style="vertical-align: middle;">
+        <rect width="20" height="20"
+          style="fill:{{ variant.metafields.my_fields.top_housing_colour.value | default: "none" }};stroke-width:3;{%- case variant.metafields.my_fields.top_housing_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+      </svg> &nbsp;{%- if variant.metafields.my_fields.top_housing_material.value -%}{%- case variant.metafields.my_fields.top_housing_material.value -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ variant.metafields.my_fields.top_housing_material.value }}{%- endcase -%}{%- endif -%}
+      </td></tr>{%- endfor -%}</table>
+    {%- else -%}
+      <svg width="20" height="20"
+          style="vertical-align: middle;">
+          <rect width="20" height="20"
+            style="fill:{{ fv_top_colour | default: "none" }};stroke-width:3;{%- case fv_top_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+        </svg> &nbsp;{%- if fv_top_material -%}{%- case fv_top_material -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ fv_top_material }}{%- endcase -%}{%- endif -%}
+    {%- endif -%}
+  </td></tr>
+  {%- endif -%}
+
+  {%- if fv_bottom_material -%}
+  <tr>
+    <td>Bottom:</td>
+    <td>
+      {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td><svg width="20" height="20"
+        style="vertical-align: middle;">
+        <rect width="20" height="20"
+          style="fill:{{ variant.metafields.my_fields.bottom_housing_colour.value | default: "none" }};stroke-width:3;{%- case variant.metafields.my_fields.bottom_housing_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+      </svg> &nbsp;{%- if variant.metafields.my_fields.bottom_housing_material.value -%}{%- case variant.metafields.my_fields.bottom_housing_material.value -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ variant.metafields.my_fields.bottom_housing_material.value }}{%- endcase -%}{%- endif -%}
+      </td></tr>{%- endfor -%}</table>
+    {%- else -%}
+      <svg width="20" height="20"
+          style="vertical-align: middle;">
+          <rect width="20" height="20"
+            style="fill:{{ fv_bottom_colour | default: "none" }};stroke-width:3;{%- case fv_bottom_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+        </svg> &nbsp;{%- if fv_bottom_material -%}{%- case fv_bottom_material -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ fv_bottom_material }}{%- endcase -%}{%- endif -%}
+    {%- endif -%}
+  </td></tr>
+  {%- endif -%}
+
+  {%- if fv_stem_colour -%}
+  <tr>
+    <td>Stem:</td>
+    <td>
+      {%- if product.variants.size > 1 -%}
+      <table class="invisible_table">{%- for variant in product.variants -%}<tr><td>{{ variant.option1 }}:</td><td><svg width="20" height="20"
+        style="vertical-align: middle;">
+        <rect width="20" height="20"
+          style="fill:{{ variant.metafields.my_fields.stem_colour.value | default: "none" }};stroke-width:3;{%- case variant.metafields.my_fields.stem_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+      </svg> &nbsp;{%- if variant.metafields.my_fields.stem_material.value -%}{%- case variant.metafields.my_fields.stem_material.value -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ variant.metafields.my_fields.stem_material.value }}{%- endcase -%}{%- endif -%}
+      </td></tr>{%- endfor -%}</table>
+    {%- else -%}
+      <svg width="20" height="20"
+          style="vertical-align: middle;">
+          <rect width="20" height="20"
+            style="fill:{{ fv_stem_colour }};stroke-width:3;{%- case fv_stem_effect -%}{%- when "Transparent" -%}stroke:rgb(128,128,128);stroke-dasharray:2;{%- else -%}stroke:rgb(0,0,0);{%- endcase -%})" />
+        </svg> &nbsp;{%- if fv_stem_material -%}{%- case fv_stem_material -%}{%- when "Polycarbonate" -%}<span class="tooltip">PC<span class="tooltiptext">Polycarbonate</span></span>{%- else -%}{{ fv_stem_material }}{%- endcase -%}{%- endif -%}
+    {%- endif -%}
+  </td></tr>
+  {%- endif -%}
+  
+</table>
+</p>
