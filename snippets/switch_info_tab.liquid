@@ -96,7 +96,7 @@
   {%- if product.metafields.my_fields.housing_type.value -%}<tr>
     <td>Housing Type:</td>
     <td>{{ product.metafields.my_fields.housing_type.value }} (opens with <a
-        href="{%- case product.metafields.my_fields.housing_type.value -%} {%- when " MX"
+        href="{%- case product.metafields.my_fields.housing_type.value -%}{%- when "MX"
         -%}/collections/mx-switch-openers{%- when "Kailh" -%}/collections/kailh-switch-openers{%- endcase -%}"
         target="_blank">these</a>)</td>
   </tr>{%- endif %}
@@ -104,7 +104,7 @@
   {%- if product.metafields.my_fields.stem_type.value -%}<tr>
     <td>Stem Type:</td>
     <td>{{ product.metafields.my_fields.stem_type.value }} (fits <a
-        href="{%- case product.metafields.my_fields.stem_type.value -%} {%- when " MX" -%}/collections/mx-keycaps{%-
+        href="{%- case product.metafields.my_fields.stem_type.value -%}{%- when "MX" -%}/collections/mx-keycaps{%-
         when "Kailh" -%}/collections/kailh-keycaps{%- endcase -%}" target="_blank">these</a> keycaps)</td>
   </tr>{%- endif %}
 
