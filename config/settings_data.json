@@ -39,7 +39,7 @@
             "type": "text",
             "settings": {
               "heading": "Corporate Information",
-              "subtext": "<p>Denness Software Systems t\/a Keeb<br\/>Postboks 10<br\/>3107 Sem<br\/>Norway<br\/><\/p>"
+              "subtext": "<p>Denness Software Systems t\/a Keyb <br\/>Postboks 10<br\/>3107 Sem<br\/>Norway<br\/><\/p>"
             }
           },
           "fc53764b-d668-4385-b572-6ca14f7dfaff": {
@@ -57,7 +57,7 @@
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails",
+          "newsletter_heading": "Sign up to our new product emails",
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
