@@ -74,11 +74,51 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "1643660694fd2e91d6": {
+      "type": "collage",
+      "blocks": {
+        "1643660694ada714d7-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "switches",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "85ad6d31-aae7-43af-9a29-efadeea53a30": {
+          "type": "collection",
+          "settings": {
+            "collection": "keyboards",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "f1f663cb-5102-4ba0-a3f9-579d824c377e": {
+          "type": "collection",
+          "settings": {
+            "collection": "tools",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "1643660694ada714d7-2",
+        "85ad6d31-aae7-43af-9a29-efadeea53a30",
+        "f1f663cb-5102-4ba0-a3f9-579d824c377e"
+      ],
+      "settings": {
+        "heading": "Also available from Keyb",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "main",
     "16421990341f2a5e41",
-    "164201147954c36fb9"
+    "164201147954c36fb9",
+    "1643660694fd2e91d6"
   ]
 }
