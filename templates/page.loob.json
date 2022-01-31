@@ -19,8 +19,8 @@
         "1642199034103f9c27-1": {
           "type": "column",
           "settings": {
-            "title": "Loob is now part of Keyb",
-            "text": "<p>After starting out in 2019 selling a handful of switch lubes to the Norwegian custom keyboard community, Loob gradually began to grow beyond its roots, and now serves thousands of keyboard builders every year, in every part of the world. So, it was time for a new name to reflect our new ambition. Welcome to Keyb!<\/p>"
+            "title": "Loob is now part of Keyb!",
+            "text": "<p>All of the Loob switch lubricant products have now joined the Keyb family, where you can find everything you need to build mechanical keyboards!<\/p>"
           }
         }
       },
@@ -67,7 +67,7 @@
         "16420114797d203add-2"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "Loob Products",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "swipe_on_mobile": false,
