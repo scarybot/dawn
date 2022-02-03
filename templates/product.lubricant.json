@@ -101,6 +101,24 @@
         "enable_video_looping": false
       }
     },
+    "164388069301d8cecd": {
+      "type": "rich-text",
+      "blocks": {
+        "1643880693581ab65f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please note that these products are specialist lubricants intended for use by professionals, and may not be suitable for use as general household\/consumer products. <strong>Please ensure you read the safety data sheets and understand how to handle them safely before use.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643880693581ab65f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -114,6 +132,7 @@
   },
   "order": [
     "main",
+    "164388069301d8cecd",
     "product-recommendations"
   ]
 }
