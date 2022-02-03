@@ -90,6 +90,9 @@
             {%- endform -%}
           {%- when 'availability' -%}
             {%- for this_variant in product.variants -%}
+            {%- if this_variant.available -%}
+            {%- continue -%}
+            {%- endif -%}
             {%- if this_variant.selected or product.selected_variant == nil and forloop.index == 1 -%}
             <div class="no-js-hidden avail" id="avail-{{ this_variant.id }}">
             {%- else -%}
