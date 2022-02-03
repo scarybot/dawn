@@ -70,7 +70,7 @@
 
         <div class="card__badge">
           {%- if product_card_product.available == false -%}
-            {%- if product_card_product.metafields.my_fields.expected != blank -%}
+            {%- if product_card_product.variants.first.next_incoming_date != blank -%}
               <span class="badge price__badge-coming-soon color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="false">
                 Coming Soon
               </span>
