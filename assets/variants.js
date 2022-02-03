@@ -9,6 +9,7 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
+    this.updateAvailability();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -68,6 +69,12 @@ class VariantSelects extends HTMLElement {
       pickUpAvailability.removeAttribute('available');
       pickUpAvailability.innerHTML = '';
     }
+  }
+
+  updateAvailability() {
+    const avail = document.querySelector('#avail-' + this.currentVariant.id);
+    document.querySelectorAll('.avail').forEach(element => element.setAttribute('hidden', true));
+    avail.removeAttribute('hidden');
   }
 
   renderProductInfo() {

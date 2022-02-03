@@ -89,12 +89,19 @@
               {{ form | payment_terms }}
             {%- endform -%}
           {%- when 'availability' -%}
-            {%- if product.metafields.my_fields.expected.value != blank -%}
-            <div class="no-js-hidden" id="price-{{ section.id }}">
-              Expected in stock <b>{{ product.metafields.my_fields.expected.value | date: '%B  %d' }}</b>
+            {%- for this_variant in product.variants -%}
+            {%- if this_variant.selected or product.selected_variant == nil and forloop.index == 1 -%}
+            <div class="no-js-hidden avail" id="avail-{{ this_variant.id }}">
+            {%- else -%}
+            <div class="no-js-hidden avail" hidden=true id="avail-{{ this_variant.id }}">
+            {%- endif -%}
+
+              {%- if this_variant.next_incoming_date -%}
+              Expected in stock <b>{{ this_variant.next_incoming_date | date: '%B  %d' }}</b>
+              {%- endif-%}
             </div>
-            {%- endif-%}
-          {%- when 'description' -%}
+            {%- endfor-%}
+            {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
                 {{ product.description }}
