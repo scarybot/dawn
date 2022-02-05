@@ -4,20 +4,31 @@
       "type": "main-blog",
       "blocks": {
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": true
+          }
         },
         "summary": {
-          "type": "summary"
+          "type": "summary",
+          "settings": {
+          }
         },
         "link": {
-          "type": "link"
+          "type": "link",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "title",
         "summary",
         "link"
-      ]
+      ],
+      "settings": {
+        "show_image": true
+      }
     }
   },
   "order": [
