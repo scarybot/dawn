@@ -96,7 +96,7 @@
             <div class="no-js-hidden avail" hidden=true id="avail-{{ this_variant.id }}">
             {%- endif -%}
             {%- if this_variant.available -%}
-              {%- else if this_variant.next_incoming_date -%}
+              {%- else if this_variant.next_incoming_date != blank -%}
               Expected in stock <b>{{ this_variant.next_incoming_date | date: '%B  %d' }}</b>
               {%- endif -%}
             </div>
