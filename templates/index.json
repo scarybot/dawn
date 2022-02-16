@@ -34,6 +34,20 @@
         "swipe_on_mobile": false
       }
     },
+    "1645053532e0fe7b39": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular chassis kits",
+        "collection": "keyboard-chassis",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": true
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -121,6 +135,7 @@
   },
   "order": [
     "164219976023ee06e7",
+    "1645053532e0fe7b39",
     "featured_products",
     "1643965476c4c54304",
     "16407938859d60b038",
