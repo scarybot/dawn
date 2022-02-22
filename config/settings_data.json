@@ -13,10 +13,19 @@
               "color_scheme": "accent-1",
               "link": ""
             }
+          },
+          "8b3d1239-2bb0-42c0-b15b-e4847bc3a5af": {
+            "type": "announcement",
+            "settings": {
+              "text": "Due to expected trade sanctions, we can no longer accept orders from Russia",
+              "color_scheme": "inverse",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "ed378896-224a-4436-997f-d3afc2f85b0f"
+          "ed378896-224a-4436-997f-d3afc2f85b0f",
+          "8b3d1239-2bb0-42c0-b15b-e4847bc3a5af"
         ],
         "settings": {
         }
