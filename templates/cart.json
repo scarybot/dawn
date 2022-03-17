@@ -1,25 +1,72 @@
 {
   "sections": {
+    "16475104504499a1d9": {
+      "type": "rich-text",
+      "blocks": {
+        "1647510450c0e4576a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are you ordering for a business?",
+            "heading_size": "small"
+          }
+        },
+        "1647510450c0e4576a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are a tax-registered business in the EU, Please contact us at support@keyb.no before ordering, so that we can make sure you have access to the best shipping services and duty\/tax handling.<\/p>"
+          }
+        },
+        "1647510450c0e4576a-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1647510450c0e4576a-0",
+        "1647510450c0e4576a-1",
+        "1647510450c0e4576a-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": false
+      }
+    },
     "cart-items": {
-      "type": "main-cart-items"
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false
+      }
     },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
         "subtotal": {
-          "type": "subtotal"
+          "type": "subtotal",
+          "settings": {
+          }
         },
         "buttons": {
-          "type": "buttons"
+          "type": "buttons",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
     }
   },
   "order": [
+    "16475104504499a1d9",
     "cart-items",
     "cart-footer"
   ]
