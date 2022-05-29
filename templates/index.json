@@ -2,9 +2,11 @@
   "sections": {
     "1653865805cfb16486": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1653865805b31a5aa7-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Bulk Lubricants"
           }
