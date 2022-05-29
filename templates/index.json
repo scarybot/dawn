@@ -1,5 +1,46 @@
 {
   "sections": {
+    "1653865805cfb16486": {
+      "type": "image-banner",
+      "blocks": {
+        "1653865805b31a5aa7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bulk Lubricants"
+          }
+        },
+        "1653865805b31a5aa7-1": {
+          "type": "text",
+          "settings": {
+            "text": "Now available while stocks last"
+          }
+        },
+        "1653865805b31a5aa7-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Take a look",
+            "button_link_1": "shopify:\/\/products\/krytox-205g0",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1653865805b31a5aa7-0",
+        "1653865805b31a5aa7-1",
+        "1653865805b31a5aa7-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_c506f1a7-6490-4d7f-b91e-a83e9bb94f97.jpg",
+        "image_2": "shopify:\/\/shop_images\/image_dfbb1781-805e-4811-afd2-daeaa346a108.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
     "164219976023ee06e7": {
       "type": "multicolumn",
       "disabled": true,
@@ -132,50 +173,10 @@
         "add_image_padding": false,
         "show_vendor": true
       }
-    },
-    "1653865805cfb16486": {
-      "type": "image-banner",
-      "blocks": {
-        "1653865805b31a5aa7-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Bulk Lubricants"
-          }
-        },
-        "1653865805b31a5aa7-1": {
-          "type": "text",
-          "settings": {
-            "text": "Now available while stocks last"
-          }
-        },
-        "1653865805b31a5aa7-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1653865805b31a5aa7-0",
-        "1653865805b31a5aa7-1",
-        "1653865805b31a5aa7-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image_c506f1a7-6490-4d7f-b91e-a83e9bb94f97.jpg",
-        "image_2": "shopify:\/\/shop_images\/image_dfbb1781-805e-4811-afd2-daeaa346a108.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
-      }
     }
   },
   "order": [
+    "1653865805cfb16486",
     "164219976023ee06e7",
     "1645053532e0fe7b39",
     "featured_products",
@@ -183,7 +184,6 @@
     "16407938859d60b038",
     "1640793579f32e0411",
     "16407938287d3d807c",
-    "164396570617c95f84",
-    "1653865805cfb16486"
+    "164396570617c95f84"
   ]
 }
