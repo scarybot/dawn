@@ -380,7 +380,7 @@
   "shopify": {
     "checkout": {
       "review": {
-        "review_notice_html": "<p><h2><font color=\"red\">&nbsp;<br><b>Important!<\/b><\/font><\/h2><p><h3><font color=\"red\">Before you place your order, we just want to let you know that we are closed for the spring vacation, and your order will ship on or after April 11th. <\/h3><\/p>"
+        "review_notice_html": "<p><h2><font color=\"red\">&nbsp;<br><b>Important!<\/b><\/font><\/h2><p><h3><font color=\"red\">Before you place your order, we just want to let you know that we are closed for the summer vacation, and your order will ship as soon as we return, on July 4th. <\/h3><\/p>"
       }
     }
   }
