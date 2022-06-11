@@ -16,9 +16,8 @@
           },
           "8b3d1239-2bb0-42c0-b15b-e4847bc3a5af": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "We are closed for spring vacation. Next shipping date will be 11th April",
+              "text": "We will soon close for summer vacation. Last orders TODAY!",
               "color_scheme": "inverse",
               "link": ""
             }
