@@ -1,5 +1,46 @@
 {
   "sections": {
+    "1654992697dc6e288e": {
+      "type": "image-banner",
+      "blocks": {
+        "165499269730c7e900-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zeal Clickiez™"
+          }
+        },
+        "165499269730c7e900-1": {
+          "type": "text",
+          "settings": {
+            "text": "Now in stock in 40g and 75g variants!"
+          }
+        },
+        "165499269730c7e900-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/products\/clickiez-clicky",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "165499269730c7e900-0",
+        "165499269730c7e900-1",
+        "165499269730c7e900-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/P1030977-Enhanced-2.jpg",
+        "image_2": "shopify:\/\/shop_images\/P1030971-Enhanced-2.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
     "1653865805cfb16486": {
       "type": "image-banner",
       "disabled": true,
@@ -178,6 +219,7 @@
     }
   },
   "order": [
+    "1654992697dc6e288e",
     "1653865805cfb16486",
     "164219976023ee06e7",
     "1645053532e0fe7b39",
