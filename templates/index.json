@@ -41,6 +41,20 @@
         "adapt_height_first_image": false
       }
     },
+    "16570382225ed3d950": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "AEBoards Switches (R2!)",
+        "collection": "aeboards-switches",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
     "1653865805cfb16486": {
       "type": "image-banner",
       "disabled": true,
@@ -216,24 +230,11 @@
         "add_image_padding": false,
         "show_vendor": true
       }
-    },
-    "16570382225ed3d950": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "AEBoards Switches (R2!)",
-        "collection": "aeboards-switches",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
     }
   },
   "order": [
     "1654992697dc6e288e",
+    "16570382225ed3d950",
     "1653865805cfb16486",
     "164219976023ee06e7",
     "1645053532e0fe7b39",
@@ -242,7 +243,6 @@
     "1643965476c4c54304",
     "1640793579f32e0411",
     "16407938287d3d807c",
-    "164396570617c95f84",
-    "16570382225ed3d950"
+    "164396570617c95f84"
   ]
 }
