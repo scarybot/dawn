@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1659635085cca23881": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
     "1659601079333cdfef": {
       "type": "featured-collection",
       "settings": {
@@ -248,6 +254,7 @@
     }
   },
   "order": [
+    "1659635085cca23881",
     "1659601079333cdfef",
     "1654992697dc6e288e",
     "16570382225ed3d950",
