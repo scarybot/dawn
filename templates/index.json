@@ -1,5 +1,19 @@
 {
   "sections": {
+    "1659601079333cdfef": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Special lubes (ON SALE!)",
+        "collection": "special-keyboard-lubes",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
     "1654992697dc6e288e": {
       "type": "image-banner",
       "disabled": true,
@@ -234,6 +248,7 @@
     }
   },
   "order": [
+    "1659601079333cdfef",
     "1654992697dc6e288e",
     "16570382225ed3d950",
     "1653865805cfb16486",
