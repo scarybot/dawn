@@ -42,6 +42,22 @@
         "show_vendor": false
       }
     },
+    "165963493936f27b54": {
+      "type": "apps",
+      "blocks": {
+        "a946bb74-db70-4e2c-a445-602ad8661999": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "a946bb74-db70-4e2c-a445-602ad8661999"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -68,6 +84,7 @@
   "order": [
     "16475104504499a1d9",
     "cart-items",
+    "165963493936f27b54",
     "cart-footer"
   ]
 }
