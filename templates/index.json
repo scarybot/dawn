@@ -1,5 +1,31 @@
 {
   "sections": {
+    "165990423972b5edbb": {
+      "type": "rich-text",
+      "blocks": {
+        "165990423837f4e6b8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Closing down clearance sale!",
+            "heading_size": "medium"
+          }
+        },
+        "165990423837f4e6b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Time rolls on, priorities change and life goes in a new direction. Thanks so much for your support since the shop first opened as loob.no, selling two varieties of grease back in 2019. We spent a bit of time among the largest specialist keyboard accessory shops in Europe, and we had fun doing it.<\/p><p>Almost everything in the store is heavily discounted. One day soon we will stop taking orders. We still have a lot of wholesale greases and oils available. If you'd like to make an offer for a large purchase, please get in touch.<\/p><p><\/p><p>Thanks for everything!<\/p><p>Soupe and Velociraptor (the Keyb team)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165990423837f4e6b8-0",
+        "165990423837f4e6b8-1"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true
+      }
+    },
     "1659635085cca23881": {
       "type": "apps",
       "settings": {
@@ -254,6 +280,7 @@
     }
   },
   "order": [
+    "165990423972b5edbb",
     "1659635085cca23881",
     "1659601079333cdfef",
     "1654992697dc6e288e",
