@@ -23,11 +23,20 @@
               "color_scheme": "inverse",
               "link": ""
             }
+          },
+          "e8bc7eaf-3c60-4db5-89f2-fb76550b110a": {
+            "type": "announcement",
+            "settings": {
+              "text": "LAST ORDERS - The store will close in a few days. The next and last shipping date will be Friday 9th September.",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "ed378896-224a-4436-997f-d3afc2f85b0f",
-          "8b3d1239-2bb0-42c0-b15b-e4847bc3a5af"
+          "8b3d1239-2bb0-42c0-b15b-e4847bc3a5af",
+          "e8bc7eaf-3c60-4db5-89f2-fb76550b110a"
         ],
         "settings": {
         }
